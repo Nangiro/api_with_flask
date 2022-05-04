@@ -92,16 +92,6 @@ class check_item(Resource):
         return '', 204
 
 
-#Get the list of the internal stock
-class all_internal_stock(Resource):
-    def get(self):
-        #request all the itens from the internal stock
-
-
-        #return the item_name
-        return '', 204
-
-
 # --------- ROUTES ---------
 api.add_resource(insert_int_stk, "/insert_int_stock")
 api.add_resource(get_int_stock, "/int_stock")
