@@ -81,11 +81,21 @@ class remove_shelf(Resource):
 
 #Get the items name
 class check_item(Resource):
-    def get(self):
+    def post(self):
         #getting the args
         args = check_item_args.parse_args()
 
         #sendind payload to rabbitMQ to get the product name
+
+
+        #return the item_name
+        return '', 204
+
+
+#Get the list of the internal stock
+class all_internal_stock(Resource):
+    def get(self):
+        #request all the itens from the internal stock
 
 
         #return the item_name
